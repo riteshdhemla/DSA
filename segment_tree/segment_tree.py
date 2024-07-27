@@ -9,6 +9,8 @@ def operation(val1, val2, op = ""):
         return max(val1, val2)
     elif op == "sum":
         return val1 + val2
+    else:
+        raise NotImplementedError
 
 class SegmentTree:
     def __init__(self, lst: list[int], op = "min"):
